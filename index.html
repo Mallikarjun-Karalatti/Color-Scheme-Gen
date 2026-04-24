@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Color Scheme Generator" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="index.css" />
+        <title>Gen-Color</title>
+    </head>
+    <body>
+        <main>
+            <form>
+                <label for="color-el"></label>
+                <input id="color-el" type="color" value="#DE6767"/>
+                <label for="color-scheme"></label>
+                <select id="color-scheme">
+                    <option>hex</option>
+                    <option>rgb</option>
+                    <option>hsl</option>
+                    <option>cmyk</option>
+                </select>
+                <button type="submit">Get Color Scheme</button>
+            </form>
+            <div id="color-palette">
+            </div>
+        </main>
+        <script type="module" src="index.js"></script>
+    </body>
+</html>
